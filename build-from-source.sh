@@ -120,6 +120,7 @@ echo
 # Clone the patches and build it
 if [ ! -d "revanced-patches" ]; then git clone https://github.com/revanced/revanced-patches; fi
 cd "revanced-patches"
+git checkout v1.8.1
 git pull
 chmod +x "./gradlew"
 
@@ -133,7 +134,7 @@ echo
 if [ ! -d "revanced-cli" ]; then git clone https://github.com/revanced/revanced-cli; fi
 cd "revanced-cli"
 git pull
-git checkout v1.5.1
+git checkout v1.4.2
 chmod +x "./gradlew"
 
 if ! "./gradlew" build; then exit 1; fi
