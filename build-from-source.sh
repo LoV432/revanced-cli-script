@@ -133,7 +133,7 @@ echo
 if [ ! -d "revanced-cli" ]; then git clone https://github.com/revanced/revanced-cli; fi
 cd "revanced-cli"
 git pull
-git-checkout v1.7.0
+git checkout v1.7.0
 chmod +x "./gradlew"
 
 if ! "./gradlew" build; then exit 1; fi
