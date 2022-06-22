@@ -21,7 +21,7 @@ jobs:
         run: |
           mkdir "build"
           cd "build"
-          wget -q "https://github.com/CnC-Robert/revanced-cli-script/releases/download/stock-yt-17.19.36/youtube.apk"
+          wget -q "https://github.com/LoV432/revanced-cli-script/releases/download/clean-yt-17.23.35/Youtube.17.23.35.apk"
           cd ..
       
       - name: Execute script
