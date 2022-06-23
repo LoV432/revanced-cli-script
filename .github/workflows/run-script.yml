@@ -6,38 +6,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-from-source:
-    runs-on: ubuntu-latest
-
-    steps:
-    
-      - uses: actions/checkout@v3
-      - uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: '17'
- 
-      - name: Download YouTube apk
-        run: |
-          mkdir "build"
-          cd "build"
-          wget -q "https://github.com/LoV432/revanced-cli-script/releases/download/clean-yt-17.23.35/youtube.apk"
-          cd ..
-      
-      - name: Execute script
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          chmod +x ./build-from-source.sh
-          ./build-from-source.sh
-          ls
-      - name: Upload Dist
-        uses: actions/upload-artifact@v2
-        with:
-          path: revanced.apk
-          name: dist
-          
-
   build-from-source-sponsor:
     runs-on: ubuntu-latest
 
