@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-from-source-sponsor:
+  build-from-source:
     runs-on: ubuntu-latest
 
     steps:
