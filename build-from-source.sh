@@ -134,7 +134,6 @@ echo
 if [ ! -d "revanced-cli" ]; then git clone https://github.com/revanced/revanced-cli; fi
 cd "revanced-cli"
 git pull
-git checkout v2.0.5
 chmod +x "./gradlew"
 
 if ! "./gradlew" build; then exit 1; fi
@@ -147,7 +146,7 @@ echo
 if [ ! -d "revanced-integrations" ]; then git clone https://github.com/revanced/revanced-integrations; fi
 cd "revanced-integrations"
 git pull
-git checkout v0.21.9
+#git checkout v0.21.9
 chmod +x "./gradlew"
 
 if ! "./gradlew" build; then exit 1; fi
