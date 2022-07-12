@@ -121,6 +121,7 @@ echo
 if [ ! -d "revanced-patches" ]; then git clone https://github.com/revanced/revanced-patches; fi
 cd "revanced-patches"
 git pull
+git checkout sponsorblock
 chmod +x "./gradlew"
 
 if ! "./gradlew" build; then exit 1; fi
