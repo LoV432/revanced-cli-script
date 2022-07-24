@@ -175,8 +175,8 @@ done
 PATCHES="${PATCHES:1}"
 
 # Execute the cli and if an adb device name is given deploy on device
-"$JAVA" -jar "revanced-cli.jar" -b "revanced-patches.jar" -a "youtube.apk" $(if [ -n "$1" ]; then echo "-d $1"; fi) -m "integrations.apk" -o "revanced.apk" -p "revanced-patches.jar" -t "temp"
+"$JAVA" -jar "revanced-cli.jar" -b "revanced-patches.jar" -a "twitter.apk" $(if [ -n "$1" ]; then echo "-d $1"; fi) -m "integrations.apk" -o "revancedtwitter.apk" -p "revanced-patches.jar" -t "temp"
 
-cp "$DIR/build/revanced.apk" "$DIR/revanced.apk"
+cp "$DIR/build/revancedtwitter.apk" "$DIR/revancedtwitter.apk"
 
 exit 0
