@@ -21,12 +21,10 @@ jobs:
         run: |
           mkdir "build"
           cd "build"
-          wget -q "https://github.com/LoV432/revanced-cli-script/releases/download/clean-yt-17.26.35/youtube.apk"
+          wget -q "https://github.com/LoV432/revanced-cli-script/releases/download/clean-twitter-9.51.0/twitter.apk"
           cd ..
       
       - name: Execute script
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           chmod +x ./build-from-source.sh
           ./build-from-source.sh
@@ -34,5 +32,5 @@ jobs:
       - name: Upload Dist
         uses: actions/upload-artifact@v2
         with:
-          path: revanced.apk
+          path: revancedtwitter.apk
           name: dist
