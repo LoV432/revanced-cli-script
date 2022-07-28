@@ -3,7 +3,7 @@
 DIR="$(pwd)"
 
 # Check if a youtube.apk is provided before continuing
-if [ ! -e "$DIR/build/youtube.apk" ]; then
+if [ ! -e "$DIR/build/reddit.apk" ]; then
 	echo
 	echo -e "\e[1;31mError: ./build/youtube.apk not found\e[0m"
 	echo	
