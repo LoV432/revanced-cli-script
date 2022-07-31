@@ -21,7 +21,7 @@ jobs:
         run: |
           mkdir "build"
           cd "build"
-          wget -q "https://github.com/LoV432/revanced-cli-script/releases/download/clean-reddit-2022.28.0/reddit.apk"
+          wget -q "https://github.com/LoV432/revanced-cli-script/releases/download/clean-reddit-2022.27.1/reddit.apk"
           cd ..
       
       - name: Execute script
