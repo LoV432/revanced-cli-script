@@ -175,7 +175,7 @@ done
 PATCHES="${PATCHES:1}"
 
 # Execute the cli and if an adb device name is given deploy on device
-"$JAVA" -jar "revanced-cli.jar" -b "revanced-patches.jar" -a "reddit.apk" $(if [ -n "$1" ]; then echo "-d $1"; fi) -m "integrations.apk" -o "revanced.apk" -p "revanced-patches.jar" -t "temp"
+"$JAVA" -jar "revanced-cli.jar" -b "revanced-patches.jar" -a "reddit.apk" -r $(if [ -n "$1" ]; then echo "-d $1"; fi) -m "integrations.apk" -o "revanced.apk" -p "revanced-patches.jar" -t "temp"
 
 cp "$DIR/build/revanced.apk" "$DIR/revanced.apk"
 
