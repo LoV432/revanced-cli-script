@@ -3,7 +3,7 @@
 DIR="$(pwd)"
 
 # Check if a youtube.apk is provided before continuing
-if [ ! -e "$DIR/build/youtube.apk" ]; then
+if [ ! -e "$DIR/build/ytmusic.apk" ]; then
 	echo
 	echo -e "\e[1;31mError: ./build/youtube.apk not found\e[0m"
 	echo	
@@ -175,7 +175,7 @@ done
 PATCHES="${PATCHES:1}"
 
 # Execute the cli and if an adb device name is given deploy on device
-"$JAVA" -jar "revanced-cli.jar" -b "revanced-patches.jar" -a "youtube.apk" $(if [ -n "$1" ]; then echo "-d $1"; fi) -m "integrations.apk" -o "revanced.apk" -p "revanced-patches.jar" -t "temp"
+"$JAVA" -jar "revanced-cli.jar" -b "revanced-patches.jar" -a "ytmusic.apk" $(if [ -n "$1" ]; then echo "-d $1"; fi) -m "integrations.apk" -o "revanced.apk" -p "revanced-patches.jar" -t "temp"
 
 cp "$DIR/build/revanced.apk" "$DIR/revanced.apk"
 
