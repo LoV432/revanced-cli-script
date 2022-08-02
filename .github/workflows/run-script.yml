@@ -17,11 +17,11 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
  
-      - name: Download YouTube apk
+      - name: Download YT Music apk
         run: |
           mkdir "build"
           cd "build"
-          wget -q "https://github.com/LoV432/revanced-cli-script/releases/download/clean-yt-17.26.35/youtube.apk"
+          wget -q "https://github.com/LoV432/revanced-cli-script/releases/download/clean-ytmusic-5.16.51/ytmusic.apk"
           cd ..
       
       - name: Execute script
