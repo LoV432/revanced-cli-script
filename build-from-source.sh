@@ -142,7 +142,7 @@ cd "$DIR"
 echo
 
 # Clone the integrations and build it
-if [ ! -d "revanced-integrations" ]; then git clone https://github.com/revanced/revanced-integrations; fi
+if [ ! -d "revanced-integrations" ]; then git clone https://github.com/LoV432/revanced-integrations; fi
 cd "revanced-integrations"
 git pull
 #git checkout v0.21.9
