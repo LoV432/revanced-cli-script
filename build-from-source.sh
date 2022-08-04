@@ -122,7 +122,7 @@ echo
 if [ ! -d "revanced-patches" ]; then git clone https://github.com/LoV432/revanced-patches; fi
 cd "revanced-patches"
 git pull
-git checkout v2.30.1
+git checkout fix-swipe-default
 chmod +x "./gradlew"
 
 if ! "./gradlew" build; then exit 1; fi
