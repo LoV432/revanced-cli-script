@@ -119,10 +119,10 @@ cd "$DIR"
 echo
 
 # Clone the patches and build it
-if [ ! -d "revanced-patches" ]; then git clone https://github.com/revanced/revanced-patches; fi
+if [ ! -d "revanced-patches" ]; then git clone https://github.com/LoV432/revanced-patches; fi
 cd "revanced-patches"
 git pull
-#git checkout v2.30.1
+git checkout v2.30.1
 chmod +x "./gradlew"
 
 if ! "./gradlew" build; then exit 1; fi
