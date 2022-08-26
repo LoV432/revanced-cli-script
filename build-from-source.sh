@@ -147,7 +147,7 @@ if [ ! -d "revanced-integrations" ]; then git clone https://github.com/LoV432/re
 cd "revanced-integrations"
 git pull
 #git checkout v0.30.4
-git checkout tablet-mini-player-restart
+git checkout pr-reverse-swipe
 chmod +x "./gradlew"
 
 if ! "./gradlew" build; then exit 1; fi
