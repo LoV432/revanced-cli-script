@@ -109,7 +109,7 @@ echo
 if [ ! -d "revanced-patcher" ]; then git clone https://github.com/revanced/revanced-patcher; fi
 cd "revanced-patcher"
 git pull
-git checkout v3.3.1
+#git checkout v3.3.1
 chmod +x "./gradlew"
 
 if ! "./gradlew" publishToMavenLocal; then exit 1; fi
