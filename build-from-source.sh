@@ -121,7 +121,7 @@ echo
 if [ ! -d "revanced-patches" ]; then git clone https://github.com/revanced/revanced-patches; fi
 cd "revanced-patches"
 git pull
-git checkout v2.60.0
+#git checkout v2.60.0
 chmod +x "./gradlew"
 
 if ! "./gradlew" build; then exit 1; fi
@@ -147,7 +147,7 @@ if [ ! -d "revanced-integrations" ]; then git clone https://github.com/LoV432/re
 cd "revanced-integrations"
 git pull
 #git checkout v0.30.4
-git checkout pr-reverse-swipe
+#git checkout pr-reverse-swipe
 chmod +x "./gradlew"
 
 if ! "./gradlew" build; then exit 1; fi
